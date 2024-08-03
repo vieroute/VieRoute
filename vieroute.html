@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VieRoute</title>
+    <link rel="stylesheet" href="vieroute.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="northside.html">Khám phá</a>
+                <a href="vieroute.html#blogs">Blogs</a>
+                <a href="vieroute.html#videos">Videos</a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="picture-vie/logo-original.png" alt="VIEROUTES Logo">
+        </div>
+        <div class="sign-in">
+            <button>Đăng Nhập</button>
+        </div>
+    </nav>
+    <!--<div class="background-image"></div>-->
+    <div class="background-image" id="backgroundImage">
+        <div class="overlay">
+            <div class="text" id="textOverlay"></div>
+        </div>
+    </div>
+
+    <div class="button-bar" id="buttonBar">
+        <button class="button-khampha">Khám phá</button>
+        <button class="button-blog">Blogs</button>
+        <button class="button-videos">Videos</button>
+        <button class="button-podcast">Podcast</button>
+    </div>
+    
+    <div class="navigation-dots">
+        <span class="dot" onclick="changeImage(0)"></span>
+        <span class="dot" onclick="changeImage(1)"></span>
+        <span class="dot" onclick="changeImage(2)"></span>
+        <span class="dot" onclick="changeImage(3)"></span>
+        <span class="dot" onclick="changeImage(4)"></span>
+    </div>
+    
+    <div class="title">
+        <p>Đi đẩu đi đâu?</p>
+    </div>
+
+    <div class="page-content">
+        <div class="image-container">
+            <a href="northside.html" target="_blank">
+                <img src="picture-vie/hanoi.jpg" alt="Hanoi">
+                <div class="image-text">Bắc</div>
+            </a>
+            
+        </div>
+        <div class="image-container">
+            <a href="northside.html"  target="_blank">
+                <img src="picture-vie/hue.jpg" alt="Hue">
+                <div class="image-text">Trung</div>
+            </a>
+            
+        </div>
+        <div class="image-container">
+            <a href="northside.html" target="_blank">
+                <img src="picture-vie/saigon.jpg" alt="Saigon">
+                <div class="image-text">Nam</div>
+            </a>
+        </div>
+
+        <div class="subtitle">
+            <p>Chuyện làng chuyện nước</p>
+        </div>
+
+        <div class="story" id="blogs">
+            <div class="story-container">
+                <a href="trada.html" target="_blank">
+                    <img src="picture-vie/trada1.jpg" alt="Saigon">
+                </a>
+                <h3>Tản mạn trà đá Hà Nội - Phần 1</h3>
+                <p>Hà Nội là nơi tôn lên văn hoá trà đá nhưng xuất xứ của thức uống bình dị này lại xuất phát từ những tiệm ăn của người Hoa trong miền Nam...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh - Hương Ly - Ngọc Lê</p>
+            </div>
+            <div class="story-container">
+                <a href="trada2.html" target="_blank">
+                    <img src="picture-vie/trada2.jpg" alt="Saigon">
+                </a>
+                <h3>Tản mạn trà đá Hà Nội - Phần 2</h3>
+                <p>Trà đá luôn mang trong mình một nét đẹp bình dị. Chỉ cần một chiếc bàn gỗ tự chế, vài chiếc ghế dài hay ghế nhựa đơn sơ, mấy cái cốc thủy tinh, vài bao thuốc lá, hộp kẹo, hộp đựng thuốc lào,... </p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh - Hương Ly - Ngọc Lê</p>
+            </div>
+            <div class="story-container">
+                <a href="hue.html" target="_blank">
+                    <img src="picture-vie/gahue.jpg" alt="Saigon">
+                </a>
+                <h3>Huế - Chốn bình yên để "chữa lành" tâm hồn còn xanh</h3>
+                <p>“Huế buồn lắm", một câu nói muôn thuở của những vị khách từng đi du lịch Huế hay thậm chí cả những người còn chưa đặt chân tới vùng đất này...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh</p>
+            </div>
+        </div>
+
+        <div class="story">
+            <div class="story-container">
+                <a href="putaleng.html" target="_blank">
+                    <img src="picture-vie/putaleng.jpg" alt="Saigon">
+                </a>
+                <h3>Lạc Bước Ở “Xứ Sở Thần Tiên” Pu Ta Leng</h3>
+                <p>Pu Ta Leng - cái tên nghe vừa hoang sơ, vừa hùng vĩ ấy luôn thôi thúc trái tim những kẻ đam mê chinh phục. Nằm sừng sững giữa đại ngàn Tây Bắc, "nóc nhà thứ hai" của Việt Nam...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh</p>
+            </div>
+            <div class="story-container">
+                <a href="nhatrang.html" target="_blank">
+                    <img src="picture-vie/nhatrang.webp" alt="Saigon">
+                </a>
+                <h3>Nha Trang và những hòn ngọc giấu mình: Khám phá thiên đường biển đảo</h3>
+                <p>Nắng vàng rực rỡ, biển xanh ngắt, cát trắng mịn màng - đó là những gì bạn sẽ được trải nghiệm khi đặt chân đến Nha Trang, "hòn ngọc" của biển Đông...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Hương Ly</p>
+            </div>
+            <div class="story-container">
+                <a href="amthuccodo.html" target="_blank">
+                    <img src="picture-vie/amthuchue.jpg" alt="Saigon">
+                </a>
+                <h3>Nền ẩm thực cố đô</h3>
+                <p>Theo sử sách, mỗi bữa ăn của vua Khải Định, Đồng Khánh, Minh Mạng… bắt buộc phải có từ 35 đến 50 món, trong đó có vài món thuộc “bát trân”, tức 8 món ăn quý nhất bao gồm...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Ngọc Lê</p>
+            </div>
+        </div>
+
+        <div class="story">
+            <div class="story-container">
+                <a href="dainoi.html" target="_blank">
+                    <img src="picture-vie/codohue.jpg" alt="Saigon">
+                </a>
+                <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>
+                <p>Có một sự thật thú vị là hai di tích Huế là Đại Nội Văn Lâu- 
+                    Nghênh Lương Đình là một trong những biểu tượng nổi tiếng của Huế được đưa vào hình 
+                    ảnh trên tờ tiền Việt Nam...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Hương Ly</p>
+            </div>
+            <div class="story-container">
+                <a href="nhatrangfes.html" target="_blank">
+                    <img src="picture-vie/festival-nhatrang.jpg" alt="Saigon">
+                </a>
+                <h3>Nha Trang - Điểm hội tụ của những lễ hội</h3>
+                <p>Lễ hội Tháp Bà Ponagar, diễn ra vào tháng 3 âm lịch hàng năm, là một trong những lễ hội lớn nhất của người dân Nha Trang và cũng là Di sản văn hóa phi vật thể Quốc gia...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Ngọc Lê</p>
+            </div>
+            <div class="story-container"></div>
+        </div>
+
+
+        <!-- New section with light pink background -->
+        <div class="pink-section">
+            <div class="pink-content">
+                <img src="picture-vie/dongkhanktomb.jpg" alt="Description of Image" class="pink-image">
+                <div class="pink-text">
+                    <h2 class="pink-subtitle">Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h2><br>
+                    <p>
+                        Lăng Đồng Khánh là sự kết hợp hài hòa giữa kiến trúc cổ truyền Việt Nam và phong cách phương Tây. 
+                        Nơi đây mang đến cho du khách cái nhìn mới mẻ về nghệ thuật kiến trúc thời Nguyễn. Nơi đây nằm 
+                        trong quần thể di tích cố đô Huế, là nơi an táng vua Đồng Khánh. Công trình nằm giữa một vùng quê
+                        nay là thôn Thượng Hai, phường Xuân Thủy, TP Huế. Vua Đồng Khánh (1864 - 1889) tại vị từ năm 1885
+                        - 1889, tên húy Nguyễn Phúc Ưng Đường là vị vua thứ 9 của nhà Nguyễn.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video" id="videos">
+            <div class="video-container">
+                <a href="link2.html">
+                    <img src="picture-vie/fisherman.jpg" alt="Saigon">
+                    <i class="fa-regular fa-circle-play"></i>
+                </a>
+                <h3>Chân mệnh thiên tử lắm gian lao – Kỳ 3: Chúa Nguyễn Ánh và nước Chân Lạp</h3>
+                <p>Tiếp nối chuỗi bài về hành trình phục vị của chúa Nguyễn Ánh, bên cạnh mối bang giao với Xiêm La, quan hệ giữa chúa Nguyễn và Chân Lạp cũng rất đán...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Cổng</p>
+            </div>
+            <div class="video-container">
+                <a href="link2.html">
+                    <img src="picture-vie/boats.jpg" alt="Saigon">
+                    <i class="fa-regular fa-circle-play"></i>
+                </a>
+                <h3>Chân mệnh thiên tử lắm gian lao – Kỳ 3: Chúa Nguyễn Ánh và nước Chân Lạp</h3>
+                <p>Tiếp nối chuỗi bài về hành trình phục vị của chúa Nguyễn Ánh, bên cạnh mối bang giao với Xiêm La, quan hệ giữa chúa Nguyễn và Chân Lạp cũng rất đán...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Cổng</p>
+            </div>
+            <div class="video-container">
+                <a href="link2.html">
+                    <img src="picture-vie/rice-fields.jpg" alt="Saigon">
+                    <i class="fa-regular fa-circle-play"></i>
+                </a>
+                <h3>Chân mệnh thiên tử lắm gian lao – Kỳ 3: Chúa Nguyễn Ánh và nước Chân Lạp</h3>
+                <p>Tiếp nối chuỗi bài về hành trình phục vị của chúa Nguyễn Ánh, bên cạnh mối bang giao với Xiêm La, quan hệ giữa chúa Nguyễn và Chân Lạp cũng rất đán...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Cổng</p>
+            </div>
+        </div>
+
+        <button class="button-more" id="more-button">Xem thêm</button>
+
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="picture-vie/footer.png" alt="Footer Image">
+            </div>
+            <div class="media-button">
+                <a href="https://www.facebook.com/VieRoute2024" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+            <footer class="footer">
+                <img src="picture-vie/logo-original.png" alt="Logo Image" class="footer-logo">
+                <p style="font-weight: bold;
+                margin-bottom: 15px;">© VietRoute 2024. All Rights Reserved</p>
+                <p>Công ty TNHH truyền thông và giải trí VIE-ROUTE</p>
+                <p>MSDN: 06868686868</p>
+                <p>Địa Chỉ: Toà nhà N10 Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    
+    <script src="vieroute.js"></script>
+</body>
+</html>

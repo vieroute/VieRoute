@@ -1,0 +1,561 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    height: 3000px;
+}
+
+.fixed-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+.dropdown {
+    margin-left: 50px;
+}
+
+.dropdown {
+    margin-left: 50px; /* 50px margin from the left edge */
+}
+
+.dropdown .fa-bars {
+    color: #fce449; /* Original color */
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.sign-in {
+    margin-right: 50px; 
+}
+
+.sign-in button {
+    background-color: #fffcda; 
+    color: #f1db00; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 58px; /* Directly below the background */
+    z-index: 999;
+    margin: 0;
+    
+}
+
+.button-bar button {
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-khampha:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 35%;
+    transform: translateX(-35%);
+}
+
+.button-khampha:hover::after {
+    width: 9%; /* Adjust the width to make it a short underline */
+}
+
+.button-blog:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+    transform: translateX(-45%);
+}
+
+.button-blog:hover::after {
+    width: 6%; /* Adjust the width to make it a short underline */
+}
+
+.button-videos:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.button-videos:hover::after {
+    width: 6%; /* Adjust the width to make it a short underline */
+}
+
+.button-podcast:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 64%;
+    transform: translateX(-50%);
+}
+
+.button-podcast:hover::after {
+    width: 8%; /* Adjust the width to make it a short underline */
+}
+
+.content {
+    background-color: #fffff4;
+    height: 1650px;
+}
+
+.northside img {
+    height: 100%;
+    width: auto;
+}
+
+.vietnam-map {
+    position: absolute;
+    height: 180%;
+    width: auto;
+    top: 140px;
+    left: 320px;
+}
+
+.hoangsa {
+    position: absolute;
+    height: 20%;
+    width: auto;
+    top: 700px;
+    right: 80px;
+}
+
+.truongsa {
+    position: absolute;
+    height: 20%;
+    width: auto;
+    top: 1350px;
+    right: 50px;
+}
+
+
+.bac-bo-content {
+    height: 420px;
+    width: 360px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    text-align: right;
+}
+
+#bac-bo-content {
+    background-color: #ffb09c;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#b21c0e;
+    text-align: left;
+}
+
+.bac-bo-content button {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: 	#b21c0e;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.trung-bo-content {
+    height: 420px;
+    width: 360px;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+}
+
+#trung-bo-content {
+    background-color: #9fcbee;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #01016f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.trung-bo-content button {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: 	#01016f;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nam-bo-content {
+    height: 420px;
+    width: 360px;
+    position: absolute;
+    top: 1200px;
+    left: 50px;
+}
+
+#nam-bo-content {
+    background-color: #E7D8F5;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color:#791DC7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nam-bo-content button {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #791DC7;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tay-bac-bo-button {
+    border: none;
+    position: absolute;
+    top: 430px;
+    left: 400px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.dong-bac-bo-button {
+    border: none;
+    position: absolute;
+    top: 180px;
+    left: 660px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.dbsh-button {
+    border: none;
+    position: absolute;
+    top: 480px;
+    left: 720px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: left;
+}
+
+.bac-trung-bo-button {
+    text-align: right;
+    border: none;
+    position: absolute;
+    top: 600px;
+    left: 480px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.nam-trung-bo-button {
+    text-align: left;
+    border: none;
+    position: absolute;
+    top: 1130px;
+    left: 960px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.tay-nguyen-button {
+    text-align: right;
+    border: none;
+    position: absolute;
+    top: 950px;
+    left: 700px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.dong-nam-bo-button {
+    text-align: right;
+    border: none;
+    position: absolute;
+    top: 1150px;
+    left: 620px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.dbscl-button {
+    text-align: left;
+    border: none;
+    position: absolute;
+    top: 1400px;
+    left: 700px;
+    z-index: 100;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 20px; /* Space 20px below the images */
+}
+
+.subtitle p {
+    font-size: 65px; /* Adjust font size as needed */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #fce449; /* Change color if needed */
+    margin-bottom: 20px;
+}
+
+.story {
+    display: flex;
+    justify-content: space-around; /* Add space between the story containers */
+    flex-wrap: wrap; /* Ensure the layout is responsive */
+    padding: 0 30px;
+}
+
+.story-container {
+    flex: 1;
+    margin: 10px; /* Add margin between story containers */
+    max-width: 30%; /* Ensure three items per row, adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: left; /* Left-align text for better readability */
+}
+
+.story-container img {
+    width: 100%;
+    height: 260px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire frame */
+    display: block; /* Remove any inline spacing */
+    border-radius: 15px;
+}
+
+.story-container h3, .story-container p {
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.video {
+    display: flex;
+    justify-content: space-around; /* Add space between the story containers */
+    flex-wrap: wrap; /* Ensure the layout is responsive */
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.video-container {
+    flex: 1;
+    margin: 10px; /* Add margin between story containers */
+    max-width: 30%; /* Ensure three items per row, adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: left; /* Left-align text for better readability */
+    position: relative;
+    display: inline-block;
+}
+
+.video-container img {
+    width: 100%;
+    height: 260px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire frame */
+    display: block; /* Remove any inline spacing */
+    border-radius: 15px;
+}
+
+.video-container h3, .video-container p {
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.fa-circle-play {
+    position: absolute; /* Position the icon absolutely within the container */
+    top: 35%; /* Center the icon vertically */
+    left: 50%; /* Center the icon horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the icon's dimensions */
+    font-size: 50px; /* Adjust the size of the play icon */
+    color: white; /* Set the color of the play icon */
+    pointer-events: none; /* Ensure the icon does not interfere with clicking the image link */
+}
+
+.button-more {
+    text-align: center;
+}
+
+.button-more button {
+    border-style: none;
+    background-color: #fffcda;
+    color: #f1db00;
+    padding: 10px 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.footer-container {
+    position: relative;
+    width: 100%;
+}
+
+.footer-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -50px; /* Adjust this value based on the overlap you want */
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.media-button {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 270px;
+}
+
+.media-button a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #28282B; /* Set the footer background color to gray */
+    padding: 80px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align text */
+    position: relative; /* Ensure footer content is positioned correctly */
+    z-index: 1; /* Ensure footer content appears above the image if necessary */
+    color: white; /* Set the text color to white for contrast */
+}
+
+.footer-logo {
+    max-width: 400px; /* Adjust the logo size as needed */
+    margin-bottom: 40px; /* Add space below the logo */
+}
+
+.footer p {
+    margin: 5px 0; /* Adjust margins for the text */
+}
