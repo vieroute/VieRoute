@@ -63,7 +63,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
                 <a href="hue3.html">
                     <img src="picture-vie/amthuchue.jpg" alt="Saigon">
                 </a>
-                <h3>Nền ẩm thực cố đô</h3>
+                <h3>Nền ẩm thực Cố Đô Huế</h3>
                 <p>Theo sử sách, mỗi bữa ăn của vua Khải Định, Đồng Khánh, Minh Mạng… bắt buộc phải có từ 35 đến 50 món, trong đó có vài món thuộc “bát trân”, tức 8 món ăn quý nhất bao gồm...</p>
                 <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Ngọc Lê</p>
             </div>
@@ -81,7 +81,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
                 <a href="hue2.html">
                     <img src="picture-vie/codohue.jpg" alt="Saigon">
                 </a>
-                <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>
+                <h3>Hành trình khám phá Cố đô: Đại Nội Văn Lâu, Nghênh Lương Đình và những ngôi lăng tẩm uy nghi</h3>
                 <p>Có một sự thật thú vị là hai di tích Huế là Đại Nội Văn Lâu- 
                     Nghênh Lương Đình là một trong những biểu tượng nổi tiếng của Huế được đưa vào hình 
                     ảnh trên tờ tiền Việt Nam...</p>

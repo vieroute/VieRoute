@@ -1,0 +1,265 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 4000px;
+    font-family: Arial, sans-serif;
+}
+
+.fixed-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent; /* Start with a transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: white; /* Change to white when scrolled */
+}
+
+.menu-bars {
+    margin-left: 50px;
+}
+
+.menu-bars {
+    margin-left: 50px; /* 50px margin from the left edge */
+}
+
+.menu-bars .fa-bars {
+    color: white; /* Original color */
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.navbar.scrolled .menu-bars .fa-bars {
+    color: #f1db00; /* Color when scrolled */
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 80px;
+    transition: transform 0.5s ease;
+}
+
+.sign-in {
+    margin-right: 50px; /* 50px margin from the right edge */
+}
+
+.sign-in button {
+    background-color: white; /* Original background color */
+    color: black; /* Original text color */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+}
+
+.navbar.scrolled .sign-in button {
+    background-color: #fffcda; /* Background color when scrolled */
+    color: #f1db00; /* Text color when scrolled */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    z-index: -1;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+    transition: background 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-tittle {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+#page-tittle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.page-tittle p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+    position: absolute;
+    bottom: 90px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.page-content {
+    padding: 20px 50px; /* Adjust padding as needed */
+    max-width: 760px; /* Adjust max-width as needed */
+    margin: 20px auto; /* Center the content */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    position: relative;
+    top: 98vh; /* Start below the background image */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    line-height: 35px;
+}
+
+.page-content img {
+    max-width: 660px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 20px; /* Space 20px below the images */
+}
+
+.subtitle p {
+    font-size: 65px; /* Adjust font size as needed */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #fce449; /* Change color if needed */
+    margin-bottom: 20px;
+}
+
+.story {
+    display: flex;
+    justify-content: space-around; /* Add space between the story containers */
+    flex-wrap: wrap; /* Ensure the layout is responsive */
+    padding: 0 30px;
+}
+
+.story-container {
+    flex: 1;
+    margin: 10px; /* Add margin between story containers */
+    max-width: 30%; /* Ensure three items per row, adjust as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: left; /* Left-align text for better readability */
+}
+
+.story-container img {
+    width: 100%;
+    height: 260px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire frame */
+    display: block; /* Remove any inline spacing */
+    border-radius: 15px;
+}
+
+.story-container h3, .story-container p {
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.story-block {
+    position: relative;
+    top: 800px;
+}
+
+.button-more {
+    text-align: center;
+}
+
+.button-more button {
+    border-style: none;
+    background-color: #fffcda;
+    color: #f1db00;
+    padding: 10px 100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.footer-container {
+    position: relative;
+    width: 100%;
+}
+
+.footer-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -50px; /* Adjust this value based on the overlap you want */
+}
+
+.footer-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.media-button {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 270px;
+}
+
+.media-button a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #28282B; /* Set the footer background color to gray */
+    padding: 80px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align text */
+    position: relative; /* Ensure footer content is positioned correctly */
+    z-index: 1; /* Ensure footer content appears above the image if necessary */
+    color: white; /* Set the text color to white for contrast */
+}
+
+.footer-logo {
+    max-width: 400px; /* Adjust the logo size as needed */
+    margin-bottom: 40px; /* Add space below the logo */
+}
+
+.footer p {
+    margin: 5px 0; /* Adjust margins for the text */
+}

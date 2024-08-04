@@ -81,7 +81,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
                 <a href="hue3.html">
                     <img src="picture-vie/codohue.jpg" alt="Saigon">
                 </a>
-                <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>
+                <h3>Hành trình khám phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và những ngôi lăng tẩm uy nghi</h3>
                 <p>Có một sự thật thú vị là hai di tích Huế là Đại Nội Văn Lâu- 
                     Nghênh Lương Đình là một trong những biểu tượng nổi tiếng của Huế được đưa vào hình 
                     ảnh trên tờ tiền Việt Nam...</p>
