@@ -2,7 +2,7 @@
 
 let currentImageIndex = 0;
 const images = [
-    'picture-vie/putaleng3.jpg',
+    'picture-vie/anhamthuchue.jpg',
 ];
 
 const texts = [
@@ -78,7 +78,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
         </div>
         <div class="story">
             <div class="story-container">
-                <a href="hue3.html">
+                <a href="hue2.html">
                     <img src="picture-vie/codohue.jpg" alt="Saigon">
                 </a>
                 <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>

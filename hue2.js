@@ -2,7 +2,7 @@
 
 let currentImageIndex = 0;
 const images = [
-    'picture-vie/putaleng3.jpg',
+    'picture-vie/codohue.jpg',
 ];
 
 const texts = [
@@ -78,14 +78,12 @@ document.getElementById("moreButton").addEventListener("click", function() {
         </div>
         <div class="story">
             <div class="story-container">
-                <a href="hue3.html">
-                    <img src="picture-vie/codohue.jpg" alt="Saigon">
+                <a href="nhatrang2.html">
+                    <img src="picture-vie/festival-nhatrang.jpg" alt="Saigon">
                 </a>
-                <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>
-                <p>Có một sự thật thú vị là hai di tích Huế là Đại Nội Văn Lâu- 
-                    Nghênh Lương Đình là một trong những biểu tượng nổi tiếng của Huế được đưa vào hình 
-                    ảnh trên tờ tiền Việt Nam...</p>
-                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Hương Ly</p>
+                <h3>Nha Trang - Điểm hội tụ của những lễ hội</h3>
+                <p>Lễ hội Tháp Bà Ponagar, diễn ra vào tháng 3 âm lịch hàng năm, là một trong những lễ hội lớn nhất của người dân Nha Trang và cũng là Di sản văn hóa phi vật thể Quốc gia...</p>
+                <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Ngọc Lê</p>
             </div>
             <div class="story-container"></div>
             <div class="story-container"></div>

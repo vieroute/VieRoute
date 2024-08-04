@@ -1,5 +1,22 @@
 // script.js
 
+// Visitor Counter Logic
+const startingCount = 248;
+
+// Check if 'visitCount' exists in localStorage
+if (localStorage.getItem('visitCount')) {
+    // Increment the visit count
+    let count = parseInt(localStorage.getItem('visitCount')) + 1;
+    localStorage.setItem('visitCount', count);
+} else {
+    // Set 'visitCount' to the starting count if it doesn't exist
+    localStorage.setItem('visitCount', startingCount);
+}
+
+// Update the visit count on the page
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('visit-count').innerText = localStorage.getItem('visitCount');
+});
 
 let currentImageIndex = 0;
 const images = [

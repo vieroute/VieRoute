@@ -52,7 +52,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
     const storyHTML = `
         <div class="story">
             <div class="story-container">
-                <a href="trada.html" target="_blank">
+                <a href="trada.html">
                     <img src="picture-vie/trada1.jpg" alt="Saigon">
                 </a>
                 <h3>Tản mạn trà đá Hà Nội - Phần 1</h3>
@@ -60,7 +60,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
                 <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh - Hương Ly - Ngọc Lê</p>
             </div>
             <div class="story-container">
-                <a href="trada2.html" target="_blank">
+                <a href="trada2.html">
                     <img src="picture-vie/trada2.jpg" alt="Saigon">
                 </a>
                 <h3>Tản mạn trà đá Hà Nội - Phần 2</h3>
@@ -68,7 +68,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
                 <p style="color: darkslategray;"><b>Blogs</b> &#183; Tác giả &#183; Châu Anh - Hương Ly - Ngọc Lê</p>
             </div>
             <div class="story-container">
-                <a href="hue.html" target="_blank">
+                <a href="hue.html">
                     <img src="picture-vie/gahue.jpg" alt="Saigon">
                 </a>
                 <h3>Huế - Chốn bình yên để "chữa lành" tâm hồn còn xanh</h3>
@@ -78,7 +78,7 @@ document.getElementById("moreButton").addEventListener("click", function() {
         </div>
         <div class="story">
             <div class="story-container">
-                <a href="dainoi.html" target="_blank">
+                <a href="hue3.html">
                     <img src="picture-vie/codohue.jpg" alt="Saigon">
                 </a>
                 <h3>Hành Trình Khám Phá Cố Đô: Đại Nội Văn Lâu, Nghênh Lương Đình và Những Ngôi Lăng Tẩm Uy Nghi</h3>
